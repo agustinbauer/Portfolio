@@ -118,7 +118,9 @@ a {
         font-size: 18px;
         padding: 10px;
     }
+}
+@media (min-width: 768px) {
     .navbar-brand{
-        padding-right: 168px;
+        padding-left: 168px;
     }
 }
