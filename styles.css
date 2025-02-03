@@ -1,0 +1,122 @@
+.hero {
+    background: linear-gradient(to right, #2c3e50, #4ca1af);
+    height: auto;
+    display: flex;
+    flex-direction: column; /* Acomoda los elementos en columna */
+    align-items: center;
+    justify-content: center;
+    margin-top: 38px;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+nav {
+    background: linear-gradient(to right, #2c3e50, #4ca1af);
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.education-box {
+    max-width: 600px;
+    margin: auto;
+}
+
+.skill-badge {
+    background: #2c3e50;
+    color: white;
+    font-size: 1rem;
+    padding: 10px 15px;
+    margin: 5px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.timeline {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+}
+
+.timeline-item {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+.linkedin-logo {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.linkedin-logo:hover {
+    transform: scale(1.2); /* Efecto de zoom al pasar el mouse */
+}
+.card-body{
+    text-align: center;
+}
+
+.card:hover {
+    background-color: #e0e5e8; /* Color más oscuro al pasar el mouse */
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.contenedor {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap; /* Permite que los elementos se acomoden en móviles */
+    text-align: center; /* Centra el texto en pantallas pequeñas */
+    justify-content: center; /* Asegura buena distribución */
+}
+
+@keyframes movimiento {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(10px); } /* Movimiento más sutil */
+    100% { transform: translateX(0); }
+}
+
+
+.imagen-circular {
+    width: 200px; /* Tamaño optimizado */
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px; /* Espacio entre la imagen y el texto */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+}
+
+.texto {
+    font-size: 28px; /* Más grande para que aproveche el espacio */
+    color: white;
+    font-style: italic;
+    max-width: 800px; /* Ancho más grande en escritorio */
+    animation: movimiento 5s infinite alternate;
+    line-height: 1.5; /* Más espaciado para que sea fácil de leer */
+}
+
+/* 🔹 Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    .imagen-circular {
+        width: 140px;
+        height: 140px;
+    }
+    .texto {
+        font-size: 18px;
+        padding: 10px;
+    }
+    
+}
