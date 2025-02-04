@@ -118,6 +118,11 @@ a {
         font-size: 18px;
         padding: 10px;
     }
+    .navbar-brand{
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+    }
 }
 @media (min-width: 768px) {
     .navbar-brand{
